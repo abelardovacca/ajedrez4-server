@@ -11,12 +11,6 @@
 
 - Q: What communication protocol should the server expose? → A: HTTP REST with JSON payloads.
 
-## Clarifications
-
-### Session 2026-05-01
-
-- Q: What communication protocol should the server expose? → A: HTTP REST with JSON payloads.
-
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Create a User Session (Priority: P1)
@@ -104,7 +98,7 @@ As a user with an active session, I can browse open and active games so that I c
 
 ### Functional Requirements
 
-- **FR-001**: System MUST allow any caller to create a user session identified by a display name (1–32 printable characters, non-empty), returning a unique session token for use in subsequent requests.
+- **FR-001**: System MUST allow any caller to create a user session identified by a display name (1–32 printable characters, non-empty), returning a unique session ID for use in subsequent requests.
 - **FR-002**: System MUST allow users with a valid session to create a new chess game, placing it in an open state awaiting a second player.
 - **FR-003**: System MUST allow users with a valid session to join an open game as the second player, transitioning the game to active and assigning player colors.
 - **FR-004**: System MUST prevent a game creator from joining their own game as the second player.
